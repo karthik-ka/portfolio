@@ -1,0 +1,61 @@
+.skill__container {
+
+    .skills__content {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
+
+.skill__title {
+    font-size: var(--normal-font-size);
+    margin-bottom: 1rem;
+}
+
+.skill {
+    background-color: var(--container--color);
+    box-shadow: 0px 0px 4px 0px #9b9b9b7a;
+    padding: 1rem;
+    border-radius: 1.25rem;
+    text-align: center;
+
+    .skill__area {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+
+        .language__icon {
+            width: 2.5rem;
+        }
+
+        .language__name {
+            color: var(--title-color);
+            font-size: var(--tiny-font-size);
+        }
+    }
+}
+
+/*============== Brake Points ================*/
+
+@media screen and (max-width: 992px) {}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 576px) {
+    .skill__container {
+
+        .skills__content {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 2rem;
+        }
+    }
+    .skill {
+        .skill__area {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+    }
+}
+
+
+/* For small devices */
+@media screen and (max-width: 350px) {}
