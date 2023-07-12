@@ -1,3 +1,7 @@
+.about__section{
+    height: 100vh;
+
+}
 .about__container {
     max-width: 900px;
     margin: auto;
@@ -93,7 +97,12 @@
 }
 }
 
-@media screen and (max-width: 576px) {}
+@media screen and (max-width: 576px) {
+    .about__section{
+        height: 100vh;
+        margin-bottom: 7rem;
+    }
+}
 
 
 /* For small devices */

@@ -5,7 +5,7 @@ import ScrollDown from "./ScrollDown";
 
 const Home = () => {
   return (
-    <section className="home__section">
+    <section className="home__section" id="home">
       <div className="home__container container">
         <div className="home__content grid">
           <Social />

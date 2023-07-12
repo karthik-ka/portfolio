@@ -12,37 +12,37 @@ const Navbar = () => {
         <div className={toggle ? "nav__menu show-menu" : "nav__menu"}>
           <ul className="nav__list grid">
             <li className="nav__item">
-              <a href="" className="nav__link active-link">
+              <a href="#home" className="nav__link active-link">
                 <i className="nav__icon uil uil-estate " />
                 Home
               </a>
             </li>
             <li className="nav__item">
-              <a href="" className="nav__link">
+              <a href="#about" className="nav__link">
                 <i className="nav__icon uil uil-user" />
                 About
               </a>
             </li>
             <li className="nav__item">
-              <a href="" className="nav__link">
+              <a href="#skill" className="nav__link">
                 <i className="nav__icon uil uil-file-alt" />
                 Skill
               </a>
             </li>
-            <li className="nav__item">
-              <a href="" className="nav__link">
+            {/* <li className="nav__item">
+              <a href="#services" className="nav__link">
                 <i className="nav__icon uil uil-bag" />
                 Services
               </a>
-            </li>
+            </li> */}
             <li className="nav__item">
-              <a href="" className="nav__link">
+              <a href="#portfolio" className="nav__link">
                 <i className="nav__icon uil uil-scenery" />
                 Portfolio
               </a>
             </li>
             <li className="nav__item">
-              <a href="" className="nav__link">
+              <a href="#contact" className="nav__link">
                 <i className="nav__icon uil uil-message" />
                 Contact
               </a>

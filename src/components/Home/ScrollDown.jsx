@@ -1,6 +1,6 @@
 function ScrollDown() {
   return (
-    <div className="home__scroll">
+    <div className="home__scroll" href="#about">
         <a href="#about" className="home__scroll-button button--flex">
         <svg
                 width="32px"
