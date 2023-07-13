@@ -1,0 +1,38 @@
+.scrollup {
+    position: fixed;
+    bottom: -20%;
+    right: 2.5rem;
+    transition: .4s;
+    opacity: 0.8;
+    .scrollbar-icon {
+        font-size: 1.5rem;
+        color: var(--body-color);
+        background: var(--title-color);
+        border-radius: 5px;
+        padding: 0 5px;
+        transition: .4s;
+
+        &:hover {
+            background: var(--title-color-dark);
+        }
+    }
+
+}
+.show-scroll{
+    bottom: 3rem;
+}
+
+@media screen and (max-width: 992px) {}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
+    .scrollup{
+        display: none;
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {}

@@ -36,9 +36,9 @@ const Navbar = () => {
               </a>
             </li> */}
             <li className="nav__item">
-              <a href="#portfolio" className="nav__link">
+              <a href="#project" className="nav__link">
                 <i className="nav__icon uil uil-scenery" />
-                Portfolio
+                Projects
               </a>
             </li>
             <li className="nav__item">

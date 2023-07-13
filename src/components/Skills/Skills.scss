@@ -1,5 +1,5 @@
 // .skill__section{
-//     height: 100vh;
+//     padding-top: 5rem;
 // }
 .skill__container {
 
@@ -61,4 +61,8 @@
 
 
 /* For small devices */
-@media screen and (max-width: 350px) {}
+@media screen and (max-width: 320px) {
+    .skill__section{
+        padding-top: 12rem;
+    }
+}
