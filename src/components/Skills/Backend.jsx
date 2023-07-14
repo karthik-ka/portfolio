@@ -1,8 +1,16 @@
+import {useEffect} from "react"
+import AOS from "aos";
+import 'aos/dist/aos.css';
 
 
 const Backend = () => {
+
+    useEffect(() => {
+     AOS.init();
+    }, [])
+
   return (
-    <div className="skill">
+    <div className="skill" data-aos="fade-up">
     <h1 className="skill__title">Backend</h1>
     <div className="skill__area grid">
 

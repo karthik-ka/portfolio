@@ -2,7 +2,15 @@ import { useRef } from "react";
 import "./Contact.scss";
 import emailjs from "@emailjs/browser";
 
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Contact = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -26,12 +34,12 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact__section section" id="contact">
+    <div className="contact__section section" id="contact" data-aos="fade-up">
       <h1 className="section__title">Contact Me</h1>
       <span className="section__subtitle">Get in touch</span>
 
       <div className="contact__container container grid">
-        <div className="contact__content">
+        <div className="contact__content" data-aos="fade-up">
           <h3 className="contact__title">Talk to me</h3>
           <div className="contact__cards">
             <div className="contact__box">
@@ -63,7 +71,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="message__section">
+        <div className="message__section" data-aos="fade-up">
           <h3 className="message__title">Write me your message</h3>
           <form ref={form} onSubmit={sendEmail}>
             <div className="name-sec">

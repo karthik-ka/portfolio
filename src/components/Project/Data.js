@@ -8,25 +8,29 @@ export const projectsData = [
         id:1,
         image: work1,
         title: "Child Monitoring System",
-        category:"App"
+        category:"App",
+        link: "https://github.com/karthik-ka/Child-Monitoring-System"
     },
     {
         id:2,
         image: work2,
         title: "Video Streaming webapp",
-        category:"App"
+        category:"App",
+        link: "https://vidmania.netlify.app"
     },
     {
         id:4,
         image: work4,
         title: "Todo-list webapp",
-        category:"App"
+        category:"App",
+        link: "https://github.com/karthik-ka/todolist-app"
     },
     {
         id:3,
         image: work3,
         title: "Online Code Editor",
-        category:"App"
+        category:"App",
+        link: "https://karthik-ka.github.io/Codify"
     },
 
     // {

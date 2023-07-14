@@ -1,7 +1,16 @@
 /* eslint-disable react/no-unescaped-entities */
-const Content = () => {
+import {useEffect} from "react"
+import AOS from "aos";
+import 'aos/dist/aos.css';
+
+
+  const Content = () => {
+
+    useEffect(() => {
+     AOS.init();
+    }, [])
   return (
-    <div className="home__data">
+    <div className="home__data" data-aos="fade-up">
       <h1 className="home__title">
         Karthik K A
         <svg
@@ -55,9 +64,8 @@ const Content = () => {
         </svg>
       </h1>
       <h3 className="home__subtitle">Web Developer</h3>
-      <p className="home__para">
-        I'm creative designer based in India, and I'm very passionate and
-        dedicated to my work.
+      <p className="home__para" style={{textAlign:"justify"}}>
+        Passionate web developer based in India. <br /> I'm dedicated to creating engaging and user-friendly websites.
       </p>
       <a href="#contact">
         <button className="button button--flex">

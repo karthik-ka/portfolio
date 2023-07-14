@@ -1,11 +1,22 @@
 /* eslint-disable react/no-unescaped-entities */
+import Resume from "../../assets/Resume.pdf"
 import { TfiHeadphoneAlt } from "react-icons/tfi";
 import { BiBriefcaseAlt } from "react-icons/bi";
 import { PiMedalLight } from "react-icons/pi";
+
+import {useEffect} from "react"
+import AOS from "aos";
+import 'aos/dist/aos.css';
+
 const Info = () => {
+
+  useEffect(() => {
+    AOS.init();
+   }, [])
+
   return (
     <div className="about__content container">
-      <div className="about__cards grid">
+      <div className="about__cards grid" data-aos="fade-up">
         <div className="about__box">
           <PiMedalLight className="box__icon" />
           <h3 className="box__title">Experience</h3>
@@ -23,8 +34,8 @@ const Info = () => {
         </div>
       </div>
 
-      <div className="about__text">
-        <p className="about__para">
+      <div className="about__text" data-aos="fade-up">
+        <p className="about__para" >
           Hello, I'm Karthik K A, an experienced web developer dedicated to creating 
           visually appealing and functional websites. I excel in designing and 
           maintaining responsive websites that offer a smooth user experience.
@@ -34,10 +45,10 @@ const Info = () => {
           the necessary expertise to develop websites that stand out from the rest.
           By staying up-to-date with the latest web design trends and leveraging 
           cutting-edge technologies, I strive to provide my clients with the highest
-          level of service. Feel free to reach out to me through the contact information provided. <br />
+          level of service. Feel free to reach out to me through the contact information provided.
           Let's create something amazing together!
         </p>
-         <a href="Resume.pdf" download className="about__button">
+         <a href={Resume} download className="about__button">
           <button className="button button--flex">
             Download CV
             <svg

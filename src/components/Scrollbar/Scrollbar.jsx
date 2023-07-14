@@ -2,6 +2,7 @@
 import React from 'react'
 import "./Scrollbar.scss"
 
+
 const Scrollbar = () => {
     window.addEventListener("scroll", ()=>{
         const scrollUp = document.querySelector(".scrollup");
