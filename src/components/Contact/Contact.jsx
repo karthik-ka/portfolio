@@ -13,6 +13,7 @@ const Contact = () => {
 
   const form = useRef();
 
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -73,6 +74,7 @@ const Contact = () => {
 
         <div className="message__section" data-aos="fade-up">
           <h3 className="message__title">Write me your message</h3>
+
           <form ref={form} onSubmit={sendEmail}>
             <div className="name-sec">
               <label className="name">Name</label>
@@ -91,7 +93,7 @@ const Contact = () => {
                 className="msg-box"
               ></textarea>
             </div>
-            <button type="submit" value="Send" className="button button--flex">
+            <button type="submit" value="Send" className="button button--flex" onClick={() => window.location.reload(true)}>
               Sent Message
               <svg
                 className="button__icon"
@@ -111,6 +113,7 @@ const Contact = () => {
                 ></path>
               </svg>
             </button>
+
           </form>
         </div>
       </div>
