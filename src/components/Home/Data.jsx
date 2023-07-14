@@ -64,8 +64,8 @@ import 'aos/dist/aos.css';
         </svg>
       </h1>
       <h3 className="home__subtitle">Web Developer</h3>
-      <p className="home__para" style={{textAlign:"justify"}}>
-        Passionate web developer based in India. <br /> I'm dedicated to creating engaging and user-friendly websites.
+      <p className="home__para" >
+        Passionate web developer based in India.  I'm dedicated to creating engaging and user-friendly websites.
       </p>
       <a href="#contact">
         <button className="button button--flex">

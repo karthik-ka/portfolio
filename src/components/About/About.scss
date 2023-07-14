@@ -1,7 +1,6 @@
-// .about__section{
-//     height: 100vh;
-
-// }
+.about__section{
+    margin-top: 6rem;
+}
 .about__container {
     max-width: 900px;
     margin: auto;
@@ -55,13 +54,14 @@
     .about__cards {
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
-        background: var(--container-color);
 
         .about__box {
-            box-shadow: 0px 0px 4px 0px #9b9b9b7a;
+            border: 1px solid rgb(0, 0, 0, 0.1);
+            box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
             padding: 1rem;
-            border-radius: 1.25rem;
+            border-radius: 1rem;
             text-align: center;
+            background: var(--container-color);
 
             .box__icon {
                 font-size: larger;
@@ -95,7 +95,7 @@
 /* For medium devices */
 @media screen and (max-width: 768px) {
     .about__section {
-        margin-top: 12rem;
+        margin-top: 8rem;
     }
 
     .about__container {
@@ -141,7 +141,7 @@
 
 
 /* For small devices */
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 380px) {
     .about__content {
         .about__cards {
             grid-template-columns: repeat(2, 1fr);
