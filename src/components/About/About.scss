@@ -16,6 +16,36 @@
         width: 350px;
         height: 350px;
         border-radius: 1.5rem;
+        position: relative;
+
+        .stamp {
+            .stamp-text {
+                position: absolute;
+                width: 10rem;
+                bottom: -3.5rem;
+                right: -3.5rem;
+                border-radius: 50%;
+                animation: rotate 8s linear infinite;
+            }
+
+            .stamp-img {
+                position: absolute;
+                width: 6rem;
+                bottom: -0.2rem;
+                right: -1.5rem;
+            }
+
+            @keyframes rotate {
+                0% {
+                    transform: rotate(0deg);
+                }
+
+                100% {
+                    transform: rotate(360deg);
+                }
+
+            }
+        }
     }
 }
 
@@ -53,6 +83,7 @@
         .about__para {
             margin: 1.5rem 0;
             font-size: var(--smaller-font-size);
+            text-align: justify;
         }
     }
 }
@@ -63,7 +94,7 @@
 
 /* For medium devices */
 @media screen and (max-width: 768px) {
-    .about__section{
+    .about__section {
         margin-top: 12rem;
     }
 
@@ -74,30 +105,35 @@
             justify-self: center;
             width: 250px;
             height: 250px;
+
+            .stamp {
+                display: none;
+            }
         }
-    }
-    
-.about__content {
-    .about__cards {
-        grid-template-columns: repeat(3, 1fr);
     }
 
-    .about__text {
-        .about__para {
-            margin: 1.5rem 0;
-            font-size: var(--smaller-font-size);
+    .about__content {
+        .about__cards {
+            grid-template-columns: repeat(3, 1fr);
         }
-        .about__button{
-        display: flex;
-        justify-content: center;
+
+        .about__text {
+            .about__para {
+                margin: 1.5rem 0;
+                font-size: var(--smaller-font-size);
+            }
+
+            .about__button {
+                display: flex;
+                justify-content: center;
+            }
+        }
+
     }
-    }
-    
-}
 }
 
 @media screen and (max-width: 576px) {
-    .about__section{
+    .about__section {
         height: 100vh;
         margin-bottom: 7rem;
     }
@@ -109,8 +145,9 @@
     .about__content {
         .about__cards {
             grid-template-columns: repeat(2, 1fr);
-        } 
+        }
     }
+
     .about__container {
         .about__img {
             justify-self: center;
@@ -118,4 +155,4 @@
             height: 200px;
         }
     }
-}  
+}

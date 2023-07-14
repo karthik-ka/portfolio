@@ -25,16 +25,16 @@ const Info = () => {
 
       <div className="about__text">
         <p className="about__para">
-          Hello, I'm Karthik K A, an experienced web developer dedicated to
-          creating visually appealing and functional websites. I have
-          a deep passion for creating visually stunning websites that not only
-          look amazing but also function seamlessly and provide a user-friendly
-          experience. Through continuous learning and honing my skills, I have
-          acquired the necessary expertise to develop websites that stand out
-          from the rest. By staying up-to-date with the latest web design trends
-          and leveraging cutting-edge technologies, I strive to provide my
-          clients with the highest level of service. Feel free to reach out to
-          me through the contact information provided. <br />
+          Hello, I'm Karthik K A, an experienced web developer dedicated to creating 
+          visually appealing and functional websites. I excel in designing and 
+          maintaining responsive websites that offer a smooth user experience.
+          My expertise lies in crafting dynamic, engaging interfaces through writing
+          clean and optimized code and utilizing cutting-edge development tools and 
+          techniques. Through continuous learning and honing my skills, I have acquired 
+          the necessary expertise to develop websites that stand out from the rest.
+          By staying up-to-date with the latest web design trends and leveraging 
+          cutting-edge technologies, I strive to provide my clients with the highest
+          level of service. Feel free to reach out to me through the contact information provided. <br />
           Let's create something amazing together!
         </p>
          <a href="Resume.pdf" download className="about__button">
