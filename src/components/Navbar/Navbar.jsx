@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Navbar.scss";
 const Navbar = () => {
-  const [toggle, setToggle] = useState(false)
+  const [toggle, setToggle] = useState(false);
   return (
     <header className="header">
       <div className="nav container">
@@ -48,9 +48,12 @@ const Navbar = () => {
               </a>
             </li>
           </ul>
-            <i className="nav__close uil uil-multiply" onClick={()=>setToggle(!toggle)}/>
+          <i
+            className="nav__close uil uil-multiply"
+            onClick={() => setToggle(!toggle)}
+          />
         </div>
-        <div className="nav__toggle" onClick={()=>setToggle(!toggle)}>
+        <div className="nav__toggle" onClick={() => setToggle(!toggle)}>
           <i className="uil uil-apps" />
         </div>
       </div>
