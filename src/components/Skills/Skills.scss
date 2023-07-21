@@ -52,9 +52,6 @@
 }
 
 @media screen and (max-width: 576px) {
-     .skill__section{
-        padding-top: 15rem;
-    }
     .skill__container {
         .skills__content {
             grid-template-columns: repeat(1, 1fr);
@@ -69,8 +66,4 @@
     }
 }
 /* For small devices */
-@media screen and (max-width: 380px) {
-     .skill__section{
-        padding-top: 20rem;
-    }
-}
+@media screen and (max-width: 380px) {}
