@@ -1,5 +1,6 @@
 .home__section{
-    height: 100vh;
+    max-height: 100vh;
+    margin-bottom: 5rem;
 }
 .home__content {
     grid-template-columns: 116px repeat(2, 1fr);

@@ -1,4 +1,3 @@
-
 .skill__container {
 
     .skills__content {
@@ -13,7 +12,7 @@
 }
 
 .skill {
-    background-color: var(--container--color);
+    background-color: var(--container-color);
     border: 1px solid rgb(0, 0, 0, 0.1);
     box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
     padding: 1rem;
@@ -52,6 +51,9 @@
 }
 
 @media screen and (max-width: 576px) {
+    .skill__section{
+        margin-top: 5rem;
+    }
     .skill__container {
         .skills__content {
             grid-template-columns: repeat(1, 1fr);
@@ -66,4 +68,8 @@
     }
 }
 /* For small devices */
-@media screen and (max-width: 380px) {}
+@media screen and (max-width: 380px) {
+    .skill__section{
+        margin-top: 12rem;
+    }
+}
