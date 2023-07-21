@@ -1,7 +1,6 @@
-/*================ Home ==================*/
-// .home__section{
-//     height: 100vh;
-// }
+.home__section{
+    height: 100vh;
+}
 .home__content {
     grid-template-columns: 116px repeat(2, 1fr);
     column-gap: 2rem;

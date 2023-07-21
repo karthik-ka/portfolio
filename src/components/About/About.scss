@@ -1,5 +1,5 @@
 .about__section{
-    margin-top: 6rem;
+    height: 100vh;
 }
 .about__container {
     max-width: 900px;
@@ -94,9 +94,9 @@
 
 /* For medium devices */
 @media screen and (max-width: 768px) {
-    .about__section {
-        margin-top: 8rem;
-    }
+    // .about__section {
+    //     margin-top: 8rem;
+    // }
 
     .about__container {
         grid-template-columns: repeat(1, 1fr);
@@ -133,10 +133,10 @@
 }
 
 @media screen and (max-width: 576px) {
-    .about__section {
-        height: 100vh;
-        margin-bottom: 7rem;
-    }
+    // .about__section {
+    //     height: 100vh;
+    //     margin-bottom: 7rem;
+    // }
 }
 
 

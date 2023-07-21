@@ -25,7 +25,7 @@ const Info = () => {
         <div className="about__box">
           <BiBriefcaseAlt className="box__icon" />
           <h3 className="box__title">Completed</h3>
-          <span className="box__subtitle">5+ projects</span>
+          <span className="box__subtitle">10+ projects</span>
         </div>
         <div className="about__box">
           <TfiHeadphoneAlt className="box__icon" />
