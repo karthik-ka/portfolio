@@ -1,0 +1,130 @@
+.education__section{
+    max-height: 100vh;
+    padding-top: 10rem;
+}
+.qualification__button {
+    text-align: center;
+    color: var(--title-color);
+    &:hover{
+        background-color: aqua;
+        cursor: pointer;
+    }
+
+    .icon {
+        font-size: 1.5rem;
+    }
+
+    .text {
+        font-size: var(--normal-font-size);
+    }
+
+
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+ }
+
+ 
+ .container-box {
+    width: 80%;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+ }
+ 
+ .container-box:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -1px;
+    width: 2px;
+    height: 70%;
+    background: var(--text-color);
+    z-index: 1;
+ }
+ 
+ .timeline-block {
+    width: -webkit-calc(50% + 8px);
+    width: -moz-calc(50% + 8px);
+    width: calc(50% + 8px);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    clear: both;
+ }
+ 
+ .timeline-block-right {
+    float: right;
+ }
+ 
+ .timeline-block-left {
+    float: left;
+    direction: rtl
+ }
+ 
+ .marker {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #F5F7FA;
+    background: var(--text-color);
+    z-index: 1;
+ }
+ 
+ .timeline-content {
+    width: 100%;
+    padding: 0 15px; //----------------------------------------------------
+    color: var(--title-color);
+    h3{
+        font-size: var(--normal-font-size);
+    }
+    p{
+        font-size: var(--smaller-font-size);
+    }
+ }
+ 
+ @media screen and (max-width: 768px) {
+    .education__section{
+        padding-top: 10rem;
+    }
+    .container-box:before {
+       left: 8px;
+       width: 2px;
+    }
+    .timeline-block {
+       width: 100%;
+       margin-bottom: 50px;
+    }
+    .timeline-block-right {
+       float: none;
+    }
+ 
+    .timeline-block-left {
+       float: none;
+       direction: ltr;
+    }
+ }
+ @media screen and (max-width: 568px){
+    .container-box {
+        margin-bottom: -12rem;
+     }
+ }
+ @media screen and (max-width: 380px){
+    .education__section{
+        padding-top: 18rem;
+    }
+    .container-box {
+        margin-bottom: -20rem;
+     }
+ }
+ 

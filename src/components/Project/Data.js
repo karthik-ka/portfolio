@@ -32,12 +32,6 @@ export const projectsData = [
         category:"App",
         link: "https://karthik-ka.github.io/Codify"
     },
-
-    // {
-    //     id:1,
-    //     image: cts,
-    //     title: "Child Monitoring System"
-    // },
 ]
 
 export const projectDataCategory = [

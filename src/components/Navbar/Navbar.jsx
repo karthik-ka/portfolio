@@ -24,17 +24,17 @@ const Navbar = () => {
               </a>
             </li>
             <li className="nav__item">
+              <a href="#qualification" className="nav__link">
+                <i className="nav__icon uil uil-bag" />
+                Qualification
+              </a>
+            </li>
+            <li className="nav__item">
               <a href="#skill" className="nav__link">
                 <i className="nav__icon uil uil-file-alt" />
                 Skill
               </a>
             </li>
-            {/* <li className="nav__item">
-              <a href="#services" className="nav__link">
-                <i className="nav__icon uil uil-bag" />
-                Services
-              </a>
-            </li> */}
             <li className="nav__item">
               <a href="#project" className="nav__link">
                 <i className="nav__icon uil uil-scenery" />
