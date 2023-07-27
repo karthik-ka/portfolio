@@ -1,6 +1,19 @@
+
+import {useEffect} from "react"
+import AOS from "aos";
+import 'aos/dist/aos.css';
+
+
+
 const Qualification = () => {
+
+    useEffect(() => {
+     AOS.init();
+    }, [])
+    
+
   return (
-    <div className="container-box">
+    <div className="container-box" data-aos="fade-up">
        <div className="timeline-block timeline-block-left">
           <div className="marker"></div>
           <div className="timeline-content">

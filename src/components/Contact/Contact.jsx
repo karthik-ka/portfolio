@@ -40,6 +40,7 @@ const Contact = () => {
       <span className="section__subtitle">Get in touch</span>
 
       <div className="contact__container container grid">
+        
         <div className="contact__content" data-aos="fade-up">
           <h3 className="contact__title">Talk to me</h3>
           <div className="contact__cards">
@@ -57,9 +58,9 @@ const Contact = () => {
               <h3 className="box__title">Whatsapp</h3>
               <span className="box__subtitle">+91 8113068690</span>
               <br />
-              <span className="box__subtitle">
+              <a href="https://wa.me/+918113068690" className="box__subtitle" style={{color:"#7f7f7f"}}>
                 Write me <i className="uil uil-arrow-right" />
-              </span>
+              </a>
             </div>
             <div className="contact__box">
               <i className="uil uil-map-marker box-icon" />

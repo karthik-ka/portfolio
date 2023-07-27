@@ -19,7 +19,7 @@ import 'aos/dist/aos.css';
       <div className="home__container container">
         <div className="home__content grid" >
           <Social />
-          <div className="home__img" data-aos="fade-up"></div>
+          <div className="home__img" data-aos="fade-left"></div>
           <Data />
         </div>
         <ScrollDown />
