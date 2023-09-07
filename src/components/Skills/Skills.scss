@@ -5,7 +5,6 @@
         gap: 2rem;
     }
 }
-
 .skill__title {
     font-size: var(--normal-font-size);
     margin-bottom: 1rem;
@@ -20,7 +19,7 @@
     text-align: center;
 
     .skill__area {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 1rem;
 
         .language__icon {

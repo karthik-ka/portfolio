@@ -7,7 +7,7 @@ import 'aos/dist/aos.css';
   const Content = () => {
 
     useEffect(() => {
-     AOS.init();
+      AOS.init();
     }, [])
   return (
     <div className="home__data" data-aos="fade-up">

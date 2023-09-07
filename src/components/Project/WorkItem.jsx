@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
   const WorkItem = ({item}) => {
 
     useEffect(() => {
-     AOS.init();
+      AOS.init();
     }, [])
 
   return (
@@ -14,7 +14,10 @@ import 'aos/dist/aos.css';
         <div className="content-card" key={item.id}>
             <img src={item.image} alt="" className="card-image"/>
             <h3 className="card-title">{item.title} </h3>
-            <a href={item.link} className="card-subtitle">Live demo<i className="uil uil-arrow-right arrow-icon" /></a>
+              <div className="flex card">
+                <button onSubmit={item.link} className="card-subtitle">Live demo</button>
+                <button onSubmit={item.link} className="card-subtitle">GitHub Repo</button>
+              </div>
         </div>
     </div>
   )

@@ -11,7 +11,7 @@ import 'aos/dist/aos.css';
 const Skills = () => {
 
     useEffect(() => {
-     AOS.init();
+      AOS.init();
     }, [])
 
   return (

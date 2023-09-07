@@ -1,40 +1,21 @@
-import { useRef } from "react";
 import "./Contact.scss";
-import emailjs from "@emailjs/browser";
 
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import 'react-toastify/dist/ReactToastify.css';
+
+
+
 
 const Contact = () => {
+
   useEffect(() => {
     AOS.init();
   }, []);
 
-  const form = useRef();
-
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_amqeuud",
-        "template_ejsvu2x",
-        form.current,
-        "S4I8cYV0sGoQRhyBa"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
-
   return (
+    
     <div className="contact__section section" id="contact" data-aos="fade-up">
       <h1 className="section__title">Contact Me</h1>
       <span className="section__subtitle">Get in touch</span>
@@ -76,14 +57,14 @@ const Contact = () => {
         <div className="message__section" data-aos="fade-up">
           <h3 className="message__title">Write me your message</h3>
 
-          <form ref={form} onSubmit={sendEmail}>
+          <form action="https://formspree.io/f/xpzgrbqe" method="POST">
             <div className="name-sec">
               <label className="name">Name</label>
-              <input type="text" name="from_name" className="name-box" />
+              <input type="text" name="username" className="name-box" autoComplete="off" required />
             </div>
             <div className="mail-sec">
               <label className="mail">Mail</label>
-              <input type="mail" name="from_email" className="mail-box" />
+              <input type="email" name="Email" className="mail-box" autoComplete="off" required />
             </div>
             <div className="message-sec">
               <label className="message">Message</label>
@@ -94,7 +75,7 @@ const Contact = () => {
                 className="msg-box"
               ></textarea>
             </div>
-            <button type="submit" value="Send" className="button button--flex" onClick={() => window.location.reload(true)}>
+            <button type="submit" value="Send" className="button button--flex">
               Sent Message
               <svg
                 className="button__icon"

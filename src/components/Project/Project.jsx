@@ -8,7 +8,7 @@ import 'aos/dist/aos.css';
   const Project = () => {
 
     useEffect(() => {
-     AOS.init();
+      AOS.init();
     }, [])
     
   return (
