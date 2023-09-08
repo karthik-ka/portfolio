@@ -60,17 +60,20 @@
                 font-size: var(--small-font-size);
             }
             .card{
-                gap: 5px;
+                gap: 4px;
                 justify-content: center;
             }
             .card-subtitle {
                 background-color: var(--title-color);
                 color: var(--body-color);
                 font-size: 12px;
-                padding: 0.8rem 2rem;
+                width: 100%;
+                padding: 0.7rem 0;
+                text-align: center;
                 border-radius: 10px;
                 margin: 0.5rem 0;
                 transition: .3s;
+                cursor: pointer;
                 &:active{
                     transform: scale(90%);
                 }
@@ -92,6 +95,9 @@
 }
 
 @media screen and (max-width: 576px) {
+    .project__section{
+        padding-top: 4rem;
+    }
     .project__container {
         grid-template-columns: repeat(1, 1fr);
     }

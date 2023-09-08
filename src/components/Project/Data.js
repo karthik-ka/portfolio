@@ -10,35 +10,37 @@ export const projectsData = [
         image: work5,
         title: "Ecommerce Application",
         category:"App",
-        link: "https://github.com/karthik-ka/Child-Monitoring-System"
+        gitLink: "https://github.com/karthik-ka/Child-Monitoring-System"
     },
     {
         id:2,
         image: work2,
-        title: "Video Streaming webapp",
+        title: "YouTube Clone",
         category:"App",
-        link: "https://vidmania.netlify.app"
+        link: "https://vidmania.netlify.app",
+        gitLink: "https://github.com/karthik-ka/VidMania"
     },
     {
         id:1,
         image: work1,
         title: "Child Monitoring System",
         category:"App",
-        link: "https://github.com/karthik-ka/Child-Monitoring-System"
+        gitLink: "https://github.com/karthik-ka/Child-Monitoring-System",
     },
     {
         id:3,
         image: work3,
         title: "Online Code Editor",
         category:"App",
-        link: "https://karthik-ka.github.io/Codify"
+        link: "https://karthik-ka.github.io/Codify",
+        gitLink: "https://github.com/karthik-ka/Codify"
     },
     {
         id:4,
         image: work4,
         title: "Todo-list webapp",
         category:"App",
-        link: "https://github.com/karthik-ka/todolist-app"
+        gitLink: "https://github.com/karthik-ka/todolist-app",
     },
 ]
 

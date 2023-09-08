@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import Resume from "../../assets/Resume.pdf"
+// import Resume from "../../assets/Resume.pdf"
 import { TfiHeadphoneAlt } from "react-icons/tfi";
 import { BiBriefcaseAlt } from "react-icons/bi";
 import { PiMedalLight } from "react-icons/pi";
@@ -12,7 +12,7 @@ const Info = () => {
 
   useEffect(() => {
     AOS.init();
-   }, [])
+  }, [])
 
   return (
     <div className="about__content container">
@@ -48,7 +48,7 @@ const Info = () => {
           level of service. Feel free to reach out to me through the contact information provided.
           Let's create something amazing together!
         </p>
-         <a href={Resume} download className="about__button">
+         <a href="/Resume.pdf" download className="about__button">
           <button className="button button--flex">
             Download CV
             <svg

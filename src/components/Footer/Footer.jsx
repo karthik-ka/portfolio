@@ -15,7 +15,6 @@ const Footer = () => {
         <a href="https://www.linkedin.com/in/karthik-k-a-674451278/"><i className="uil uil-linkedin-alt social-icon" /></a>
         <a href="https://github.com/karthik-ka"><i className="uil uil-github-alt social-icon" /></a>
         <a href="https://twitter.com/krthik__"><i className="uil uil-twitter social-icon" /></a>
-        {/* <a href=""><i className="uil uil-facebook-f social-icon" /></a> */}
         </span>
         <span className="copyright">Copyright © 2023. All rights are reserved</span>
         

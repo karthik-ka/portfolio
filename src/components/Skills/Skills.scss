@@ -1,5 +1,7 @@
+.skill__section{
+    padding: 0;
+}
 .skill__container {
-
     .skills__content {
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
@@ -51,7 +53,7 @@
 
 @media screen and (max-width: 576px) {
     .skill__section{
-        margin-top: 5rem;
+        padding-top: 6rem;
     }
     .skill__container {
         .skills__content {

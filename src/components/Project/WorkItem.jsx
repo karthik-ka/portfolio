@@ -15,8 +15,8 @@ import 'aos/dist/aos.css';
             <img src={item.image} alt="" className="card-image"/>
             <h3 className="card-title">{item.title} </h3>
               <div className="flex card">
-                <button onSubmit={item.link} className="card-subtitle">Live demo</button>
-                <button onSubmit={item.link} className="card-subtitle">GitHub Repo</button>
+                {item.link && <a href={item.link} className="card-subtitle">Live demo</a> }
+                <a href={item.gitLink} className="card-subtitle">GitHub Repo</a>
               </div>
         </div>
     </div>

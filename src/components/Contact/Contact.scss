@@ -1,6 +1,6 @@
 .contact__section {
     margin: auto;
-    margin-bottom: 5rem;
+    padding-top: 6rem;
 }
 .contact__container {
     grid-template-columns: repeat(2, 1fr);
@@ -136,7 +136,7 @@
 
 @media screen and (max-width: 576px) {
     .contact__section {
-        margin-top: 36rem;
+        padding-top: 62rem;
     }
     .contact__container {
         grid-template-columns: repeat(1, 1fr);
